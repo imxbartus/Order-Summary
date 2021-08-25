@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.bg {
+    position: absolute;
+    z-index: -1;
+}
+
+.bg img {
+    width: 100vw;
+    margin-top: -10vh;
+}
+
+body {
+    background-color: hsl(225, 100%, 94%);
+}
+
+.card {
+    margin: 50px auto 0 auto;
+    height: 70%;
+    max-width: 680px;
+    width: 50%;
+    border-radius: 25px;
+    padding-bottom: 30px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card img {
+    border-radius: 25px 25px 0 0;
+    width: 100%;
+}
+
+.card h1 {
+    margin-top: 25px;
+    text-align: center;
+    color: hsl(223, 47%, 23%);
+
+}
+
+p.description{
+    color:hsl(224, 23%, 55%);
+    font-size: 1rem;
+    width: 50%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.plan {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px 15px;
+    display: flex;
+    border-radius: 25px;
+    align-items: center;
+    height: 8vh;
+    background-color: hsl(225, 100%, 98%);
+    flex-wrap: wrap;
+}
+
+
+img.music{
+    height: 50px;
+    width: 50px;
+    margin-right: 30px;
+}
+
+.priceing {
+    width: 70%;
+
+}
+
+.plan h3{
+    color: black;
+    font-weight: 700;
+    font-size: 19px;
+    text-align: left;
+    width: 50%;
+    color: hsl(223, 47%, 23%);
+}
+
+p.price {
+    color:hsl(224, 23%, 55%);
+    font-size: 1rem;
+    width: 70%;
+    width: 20%;
+
+}
+
+p.change {
+    color: black;
+    font-size: 15px;
+    text-align: right;
+    width: 10%;
+}
+
+p.change:hover {
+    color: #776cf1;
+    cursor: pointer;
+}
+
+.card button {
+    margin: 40px auto 25px;
+    border-radius: 15px;
+    font-size: 16px;
+    padding: 13px 0;
+    border: none;
+    width: 80%;
+    background-color: #483cce;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.card button:hover {
+    filter:drop-shadow(0 10px 8px #d0ccff);
+    background-color: #776cf1;
+
+}
+
+p.cancel {
+    text-align: center;
+    color: hsl(223, 47%, 23%);
+    margin: 5px 0;
+    transition: 0.2s;
+}
+
+p.cancel:hover {
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+
+.attribution {
+    margin: 20px 0;
+    font-size: 11px;
+    text-align: center;
+    display: block;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+@media (min-width: 374px) and (max-width: 1180px) {
+
+    .card{
+            width: 80%;
+        }
+
+    p.description {
+        width: 80%;
+    }
+
+    img.music{
+        height: 50px;
+        width: 50px;
+        margin-right: 5px;
+    }
+    
+    .priceing {
+        width: calc(75% - 50px);
+        margin-left: 10px;
+
+    }
+    
+    .plan h3 {
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .plan {
+        height: 8vh;
+        
+    }
+    
+    p.price {
+        font-size: 14px;
+        margin-right: 0;
+
+    
+    }    
+
+    p.change {
+        font-size: 14px;
+        text-align: right;
+        width: 15%;
+    }
+
+    .attribution {
+        display: none;
+    }
+
+}
